@@ -1,0 +1,3039 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge ecommerce</title>
+    <meta name="description" content="Practice UI/ UX Challenge" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="px-2 py-2 container-home">
+        <div class="d-flex justify-content-between">
+          <a class="nav-log" href="#">
+            <img
+              class="logodesktop"
+              src="./images/logo-shopping-cart.svg"
+              alt="Ecommerce-Libre Logo"
+            />
+            <img
+              class="logomobile"
+              src="./images/logo-shopping-cart-mobile.svg"
+              alt="Ecommerce-Libre Logo mobile"
+            />
+          </a>
+          <form class="navsearch-form" method="GET" role="search">
+            <input type="text" placeholder="Buscar productos, marcas y más…" />
+            <button type="submit">
+              <svg
+                height="21"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#161616"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="d-flex">
+            <button class="burguer" id="toggle-burguer">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+            <div class="cart">
+              <img
+                src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry.png"
+              />
+            </div>
+          </div>
+
+          <!-- <div class="cart">hi</div> -->
+        </div>
+        <div class="d-flex justify-content-between">
+          <nav class="nav-search d-flex">
+            <a class="location">
+              <img src="./images/mapmarker.svg" alt="" />
+              <div>
+                <span>Enviar a</span>
+                <span>Capital Federal</span>
+              </div>
+            </a>
+
+            <ul class="nav-menu">
+              <li>Categorías</li>
+              <li>Ofertas</li>
+              <li>Historial</li>
+              <li>Vender</li>
+              <li>Ayuda</li>
+            </ul>
+          </nav>
+          <nav class="nav-login">
+            <a href="#">Creá tu cuenta</a>
+            <a href="#">Ingresá</a>
+            <a href="#">Mis compras</a>
+          </nav>
+        </div>
+      </div>
+      <nav class="navbarburguer" id="main-nav">
+        <div class="login-content px-3 py-4">
+          <div class="d-flex">
+            <div class="profile">
+              <svg
+                class="nav-header-menu-mobile-guest-icon"
+                width="28"
+                height="35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.343 33.706l-1.356.64A13.25 13.25 0 0 0 14 26.75c-5.17 0-9.8 2.988-11.978 7.578l-1.356-.643A14.75 14.75 0 0 1 14 25.25a14.75 14.75 0 0 1 13.343 8.456zM14 21.75C8.063 21.75 3.25 16.937 3.25 11S8.063.25 14 .25 24.75 5.063 24.75 11 19.937 21.75 14 21.75zm0-1.5a9.25 9.25 0 1 0 0-18.5 9.25 9.25 0 0 0 0 18.5zm0-2.5v-1.5a5.25 5.25 0 1 0 0-10.5v-1.5a6.75 6.75 0 0 1 0 13.5z"
+                  fill="#BBB"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+            </div>
+            <div class="login">
+              <h2>Bienvenido</h2>
+              <p>Ingresa a tu cuenta para ver tus compras, favoritos, etc.</p>
+            </div>
+          </div>
+          <div class="d-flex gap-2 justify-content-end mt-3">
+            <button class="btn w-btn blue me-2" type="button">Ingresá</button>
+            <button class="btn btn-outline-primary w-btn me-2" type="button">
+              Creá tu cuenta
+            </button>
+          </div>
+        </div>
+
+        <ul class="listmenu">
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/home.svg" alt="" />Inicio</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/etiqueta.svg" alt="" />Ofertas</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/history.svg" alt="" />Historial</a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="./images/icon-nav/tag.svg" alt="" />Vender</a>
+          </li>
+        </ul>
+        <ul class="listmenu">
+          <li>
+            <a href="#"
+              ><img
+                src="./images/icon-nav/carrito-de-compras.svg"
+                alt=""
+              />Supermercado</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/tshirt.svg" alt="" />Moda</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/tienda.svg" alt="" />Tiendas
+              oficiales</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-nav/menu.svg" alt="" />Categorías</a
+            >
+          </li>
+        </ul>
+        <ul class="listmenu">
+          <li>
+            <a href=""
+              ><img src="./images/icon-nav/question.svg" alt="" />Ayuda</a
+            >
+          </li>
+        </ul>
+        <ul class="listmenu">
+          <li>
+            <a href=""
+              ><img src="./images/icon-nav/download.svg" alt="" />¡Comprá y
+              vendé con la app!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="slide-offproduct">
+        <div class="container-slide">
+          <div class="item-slide fadein">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/slide-mb-1.jpg"
+              />
+              <img
+                src="./images/slide1.png"
+                alt="slide 1"
+                fetchpriority="high"
+              />
+            </picture>
+          </div>
+          <div class="item-slide fadein">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/slide-mb-2.jpg"
+              />
+              <img src="./images/slide2.png" alt="slide 2" />
+            </picture>
+          </div>
+          <div class="item-slide fadein">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/slide-mb-3.jpg"
+              />
+              <img src="./images/slide3.png" alt="slide 3" />
+            </picture>
+          </div>
+          <div class="item-slide fadein">
+            <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="./images/slide-mb-4.jpg"
+              />
+              <img src="./images/slide4.png" alt="slide 4" />
+            </picture>
+          </div>
+          <div class="direction-arrow">
+            <span href="#" class="back" onclick="nextSlide(-1)">&#10094;</span>
+            <span href="#" class="next" onclick="nextSlide(1)">&#10095;</span>
+          </div>
+          <div>
+            <ul class="container-point">
+              <li>
+                <button class="point" onclick="positionSlide(1)"></button>
+              </li>
+              <li>
+                <button class="point" onclick="positionSlide(2)"></button>
+              </li>
+              <li>
+                <button class="point" onclick="positionSlide(3)"></button>
+              </li>
+              <li>
+                <button class="point" onclick="positionSlide(4)"></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="payment">
+        <div class="px-2 py-5 container-home">
+          <div class="box-payment d-flex">
+            <div class="col payment-data">
+              <img src="./images/credit-card.svg" alt="credit-card" />
+              <div>
+                <h2>Tarjeta de Credito</h2>
+                <a href="">Ver promociones bancarias</a>
+              </div>
+            </div>
+            <div class="col payment-data">
+              <img src="./images/debit-card.svg" alt="debit-card" />
+              <div>
+                <h2>Tarjeta de débito</h2>
+                <a href="">Ver más</a>
+              </div>
+            </div>
+            <div class="col payment-data">
+              <img
+                src="./images/mercado-creditsv2.svg"
+                alt="mercado-creditsv2"
+              />
+              <div>
+                <h2>Cuota sin tarjeta</h2>
+                <a href="">Conocé Ecommerce Crédito</a>
+              </div>
+            </div>
+            <div class="col payment-data">
+              <img
+                src="./images/payment-agreement.svg"
+                alt="payment-agreement"
+              />
+              <div>
+                <h2>Efectivo</h2>
+                <a href="">Ver más</a>
+              </div>
+            </div>
+            <div class="payment-group">
+              <a href="">
+                <img
+                  src="./images/view-more.svg"
+                  alt="view-more"
+                  fetchpriority="high"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section las-visit">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Basado en tu última visita</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="slide-arrow" id="slide-arrow">
+              <button class="back-slide abs-back"></button>
+              <button class="next-slide abs-next"></button>
+            </div>
+            <div class="list-product" id="list-product">
+              <!-- product-item 1-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_768717-MLA44845173531_022021-AB.webp"
+                      alt="patineta infantil"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p class="description">
+                        Patineta Infanti Plataforma Cochecito Universal Para
+                        Hermano
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 2-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_805521-MLA43228186269_082020-AB.webp"
+                      alt="Cochecito de bebé"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Love 172 de paseo rosa 05 con chasis
+                        negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 3-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_862529-MLA46263429477_062021-AB.webp"
+                      alt="Cochecito de bebé Bebesit"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Bebesit Eos de paseo verde agua con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 4-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_656342-MLA46076948038_052021-AB.webp"
+                      alt="Cochecito de bebé Dencar"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Dencar Coche Cuna 3133 de paseo rosa
+                        con chasis plateado
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 5-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_870535-MLA46233814519_062021-AB.webp"
+                      alt="Cochecito de bebé Fisher-Price"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 1000 <span>00</span></s>
+                        </p>
+                        <span>1.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Fisher-Price Alvis de paseo rojo con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 6-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_927339-MLA40694328736_022020-AB.webp"
+                      alt="Cochecito de bebé Mega"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.490</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Mega Baby Jupiter paragüitas azul con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 7-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_697216-MLA40353019258_012020-AB.webp"
+                      alt="Cochecito de bebé Love 297"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Love 297 de 3 ruedas rojo con chasis
+                        plateado
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 8-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_759651-MLA43170523538_082020-AB.webp"
+                      alt="Cochecito de bebé Infanti Twister "
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Infanti Twister paragüitas rosa con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 9-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_751654-MLA46248119067_062021-AB.webp"
+                      alt="Cochecito de bebé Bebesit"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Bebesit Neuf paragüitas verde agua con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 10-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_860947-MLA40194584114_122019-AB.webp"
+                      alt="Cochecito de bebé Duck"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Duck Party paragüitas rojo con chasis
+                        plateado
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section las-visit2">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Computación</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="slide-arrow" id="slide-arrow">
+              <button id="back-slide" class="back-slide abs-back"></button>
+              <button id="next-slide" class="next-slide abs-next"></button>
+            </div>
+            <div class="list-product" id="list-product2">
+              <!-- product-item 1-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_927201-MLA42896421970_072020-AB.webp"
+                      alt="Soporte Universal Notebook"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p class="description">
+                        Soporte Universal Notebook - Stand Regulable Y Portátil.
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 2-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_955942-MLA47230563353_082021-AB.webp"
+                      alt="Soporte Universal Notebook"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Universal Notebook - Stand Regulable Y Portátil.
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 3-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_915657-MLA46994707987_082021-AB.webp"
+                      alt="Soporte Base Tablet Notebook Ergonomico Regulable Plegable"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Base Tablet Notebook Ergonomico Regulable
+                        Plegable
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 4-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_643993-MLA44692832037_012021-AB.webp"
+                      alt="Cochecito de bebé Dencar"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Universal Notebook-stand Regulable Y Portátil.
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 5-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_643824-MLA45261125346_032021-AB.webp"
+                      alt="Kit Soporte Notebook "
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 1000 <span>00</span></s>
+                        </p>
+                        <span>1.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Kit Soporte Notebook + Soporte Celular Cuotas Sin
+                        Interés
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 6-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_681103-MLA47044434306_082021-AB.webp"
+                      alt="Cochecito de bebé Mega"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.490</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Para Notebook Plegable Y Regulable, Super
+                        Resistente
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 7-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_793575-MLA43839065642_102020-AB.webp"
+                      alt="Cochecito de bebé Love 297"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte De Escritorio Para Notebook Altura Y Ancho
+                        Regulable
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 8-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_643824-MLA45261125346_032021-AB.webp"
+                      alt="Cochecito de bebé Infanti Twister "
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Kit Soporte Notebook + Soporte Celular Cuotas Sin
+                        Interés
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 9-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_757494-MLA46994821285_082021-AB.webp"
+                      alt="Cochecito de bebé Bebesit"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Base Para Notebook Ergonomico Regulable Plegable
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 10-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_756832-MLA45511240397_042021-AB.webp"
+                      alt="Cochecito de bebé Duck"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Base Notebook Macbook Pro Air Aluminio
+                        Ergonomico
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section las-visit3">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Ofertas</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="slide-arrow" id="slide-arrow">
+              <button id="back-slide3" class="back-slide abs-back"></button>
+              <button id="next-slide3" class="next-slide abs-next"></button>
+            </div>
+            <div class="list-product" id="list-product3">
+              <!-- product-item 1-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_967725-MLA46624706344_072021-AB.webp"
+                      alt="Televisor Smart Tcl 42 "
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p class="description">
+                        Televisor Smart Tcl 42 Full Hd Led Android L42s6500
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 2-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_676233-MLA46118854099_052021-AB.webp"
+                      alt="CMonitor Hp P22v G4 21.5"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Monitor Hp P22v G4 21.5 Full Hd Hdmi Vga Vesa Garantia
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 3-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_968399-MLA46552827851_062021-AB.webp"
+                      alt="Cochecito de bebé Bebesit"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Bicicleta Mtb Armor Aluminio R29 21 Cambios Freno A
+                        Disco Pc
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 4-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_943456-MLA43579504637_092020-AB.webp"
+                      alt="Cochecito de bebé Dencar"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Taladro Atornillador Daewoo 18v Inalambrico + Kit Bosch
+                        Mechas Y Puntas
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 5-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_964727-MLA44485684716_012021-AB.webp"
+                      alt="Cochecito de bebé Fisher-Price"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 1000 <span>00</span></s>
+                        </p>
+                        <span>1.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Ecommerce Pago Point Smart Chip 4gb Celular + Impresora
+                        Posnet
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 6-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_927339-MLA40694328736_022020-AB.webp"
+                      alt="Cochecito de bebé Mega"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.490</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Mega Baby Jupiter paragüitas azul con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 7-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_697216-MLA40353019258_012020-AB.webp"
+                      alt="Cochecito de bebé Love 297"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Love 297 de 3 ruedas rojo con chasis
+                        plateado
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 8-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_759651-MLA43170523538_082020-AB.webp"
+                      alt="Cochecito de bebé Infanti Twister "
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Infanti Twister paragüitas rosa con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 9-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_751654-MLA46248119067_062021-AB.webp"
+                      alt="Cochecito de bebé Bebesit"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Bebesit Neuf paragüitas verde agua con
+                        chasis negro
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 10-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_860947-MLA40194584114_122019-AB.webp"
+                      alt="Cochecito de bebé Duck"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Cochecito de bebé Duck Party paragüitas rojo con chasis
+                        plateado
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 section mercado-pago">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Beneficios de Ecommerce Puntos</h3>
+            <a href="#" class="px-3"> Ver todos los beneficios</a>
+          </div>
+          <div class="flex-wrap d-flex">
+            <div class="px-2 py-3 col-12 col-lg-4">
+              <div class="box-points">
+                <img
+                  src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/widget/characters-carousel-widget-v2@2x.png"
+                  alt="characters"
+                />
+                <div class="partners-subscriptions">
+                  <img
+                    src="https://http2.mlstatic.com/resources/frontend/statics/loyal/starplus-brand@2x.png?v=1"
+                    alt="starplus"
+                  />
+                  <div class="data-partners">
+                    <blockquote>Hasta 30% OFF</blockquote>
+                    <span>Disney+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 py-3 col-12 col-lg-4">
+              <div class="box-points">
+                <img
+                  src="https://http2.mlstatic.com/resources/frontend/statics/loyal/star-plus-widget@2x.png"
+                  alt="star-plus"
+                />
+                <div class="partners-subscriptions">
+                  <img
+                    src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/vdp/disney-brand@2x.png?v=1"
+                    alt="disney"
+                  />
+                  <div class="data-partners">
+                    <blockquote>
+                      Beneficio con tu suscripción al nivel 6
+                    </blockquote>
+                    <span>Disney+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-2 py-3 col-12 col-lg-4">
+              <div class="box-points">
+                <img
+                  src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/widget/friends-widget@2x.jpg"
+                  alt="friends"
+                />
+                <div class="partners-subscriptions">
+                  <img
+                    src="https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/hbomax/logo/logoSquare@2x.png?v=1"
+                    alt="logoSquare"
+                  />
+                  <div class="data-partners">
+                    <span>7 DÍAS GRATIS</span>
+                    <blockquote>Hasta 30% OFF</blockquote>
+                    <span>Disney+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 section descrubri">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Descubrí</h3>
+          </div>
+          <div class="flex-wrap d-flex">
+            <div class="mb-2 col-12 col-md-6">
+              <div class="discover d-flex">
+                <div>
+                  <p>Semana del bebé</p>
+                  <h3>25% OFF <br />y 12x sin interés</h3>
+                  <button>Descubrí</button>
+                </div>
+                <div>
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_860654-MLA47326345781_092021-C.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ps-0 ps-md-2 col-12 col-md-6">
+              <div class="discover d-flex">
+                <div>
+                  <p>Higiene personal</p>
+                  <h3>Hasta <br />35% OFF</h3>
+                  <button>Ver más</button>
+                </div>
+                <div>
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_757660-MLA47379822440_092021-C.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section las-visit4">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Relacionado con tus visitas en Juegos y Juguetes</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="slide-arrow" id="slide-arrow">
+              <button id="back-slide4" class="back-slide abs-back"></button>
+              <button id="next-slide4" class="next-slide abs-next"></button>
+            </div>
+            <div class="list-product" id="list-product4">
+              <!-- product-item 1-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product1.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p class="description">
+                        Peluche Puff Sillón Sofá Infantil Niños Niñas 45x40cm
+                        Aprox
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 2-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product2.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>Unicornio Puff Sillon De Peluche Grande 50 X 45 Cms</p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 3-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product3.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Asiento Sillon Puff Para Niños Oso Panda Perro
+                        Bebe
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 4-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product4.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Sillon Sofa Infantil Peluche Puff 45cm X 45cm Aprox.
+                        23046
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 5-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product5.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 1000 <span>00</span></s>
+                        </p>
+                        <span>1.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Almohada Blanda Tierna De Peluche Smoochy Pals Kawaii
+                        20x30
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 6-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product6.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.490</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillón Sofá Infantil Niños Niñas 45x40 Cm
+                        Aprox
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 7-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product7.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>Sofá De Peluche Dinosaurio Sillón Puff Niñopeluche</p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 8-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product8.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillon Ideal Para Niños Varios Modelos
+                        Hermoso
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 9-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_887602-MLA44973693873_022021-AB.webp"
+                      alt="peluches"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>Sofá De Peluche Dinosaurio Sillón Puff Niñopeluche</p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 10-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_880896-MLA44464622677_122020-AB.webp"
+                      alt=""
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillon Ideal Para Niños Varios Modelos
+                        Hermoso
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 section mercado-pago">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Las mejores tiendas te esperan</h3>
+            <a href="#" class="px-3"> Ver todos los beneficios</a>
+          </div>
+          <div class="flex-wrap basecard d-flex flex-xl-nowrap">
+            <div class="cardclient adidas">
+              <img
+                class="card-image"
+                src="https://mla-s1-p.mlstatic.com/687102-MLA45628970987_042021-AE.webp"
+                alt="hp"
+              />
+
+              <h2 class="card__exp">HP Tienda Oficial</h2>
+
+              <div class="mb-4 d-flex justify-content-center">
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_676233-MLA46118854099_052021-R.webp"
+                    alt="1"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_666270-MLA47374585912_092021-R.webp"
+                    alt="2"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_606425-MLA46965248486_082021-R.webp"
+                    alt="3"
+                  />
+                </div>
+              </div>
+              <p>Ver Tienda</p>
+            </div>
+            <div class="cardclient samsung">
+              <img
+                class="card-image"
+                src="https://http2.mlstatic.com/D_Q_NP_869939-MLA28051336464_082018-AE.webp"
+                alt="hp"
+              />
+
+              <h2 class="card__exp">HP Tienda Oficial</h2>
+
+              <div class="mb-4 d-flex justify-content-center">
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_676233-MLA46118854099_052021-R.webp"
+                    alt="1"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_666270-MLA47374585912_092021-R.webp"
+                    alt="2"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_606425-MLA46965248486_082021-R.webp"
+                    alt="3"
+                  />
+                </div>
+              </div>
+              <p>Ver Tienda</p>
+            </div>
+            <div class="cardclient randers">
+              <img
+                class="card-image"
+                src="https://http2.mlstatic.com/D_Q_NP_636207-MLA25899966797_082017-AE.webp"
+                alt="hp"
+              />
+
+              <h2 class="card__exp">HP Tienda Oficial</h2>
+              <div class="mb-4 d-flex justify-content-center">
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_676233-MLA46118854099_052021-R.webp"
+                    alt="1"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_666270-MLA47374585912_092021-R.webp"
+                    alt="2"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_606425-MLA46965248486_082021-R.webp"
+                    alt="3"
+                  />
+                </div>
+              </div>
+              <p>Ver Tienda</p>
+            </div>
+            <div class="cardclient hp">
+              <img
+                class="card-image"
+                src="https://mla-s2-p.mlstatic.com/698488-MLA45917797720_052021-AE.webp"
+                alt="hp"
+              />
+
+              <h2 class="card__exp">HP Tienda Oficial</h2>
+              <div class="mb-4 d-flex justify-content-center">
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_676233-MLA46118854099_052021-R.webp"
+                    alt="1"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_666270-MLA47374585912_092021-R.webp"
+                    alt="2"
+                  />
+                </div>
+                <div class="box-image">
+                  <img
+                    src="https://http2.mlstatic.com/D_Q_NP_606425-MLA46965248486_082021-R.webp"
+                    alt="3"
+                  />
+                </div>
+              </div>
+              <p>Ver Tienda</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section las-visit5">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>También puede interesarte</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="slide-arrow" id="slide-arrow">
+              <button id="back-slide5" class="back-slide abs-back"></button>
+              <button id="next-slide5" class="next-slide abs-next"></button>
+            </div>
+            <div class="list-product" id="list-product5">
+              <!-- product-item 1-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_774896-MLA47309827330_082021-AB.webp"
+                      alt="Auriculares In Ear Bluetooth"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p class="description">
+                        Auriculares In Ear Bluetooth Inalambricos Earbuds Tws
+                        A6s
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 2-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_937279-MLA46120903571_052021-AB.webp"
+                      alt=""
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Auriculares Bluetooth F9 Tws Mejor Que Xiaomi Earpods
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 3-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_747611-MLA31114396894_062019-AB.webp"
+                      alt=""
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Tv Led Lcd Brazo Móvil Articulado Para 32 40 42
+                        43
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 4-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_610807-MLA45117805550_032021-AB.webp"
+                      alt="Soporte Led Tv"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4000 <span>00</span></s>
+                        </p>
+                        <span>4.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Soporte Led Tv Lcd Smart Articulado Doble Brazo
+                        Reforzado 32
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 5-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_714211-MLA45341694908_032021-AB.webp"
+                      alt=""
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 1000 <span>00</span></s>
+                        </p>
+                        <span>1.229</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Parlante Gamer 2.1 Ultra Iluminacion Rgb Panter Gs302
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 6-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product6.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.490</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillón Sofá Infantil Niños Niñas 45x40 Cm
+                        Aprox
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 7-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product7.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>Sofá De Peluche Dinosaurio Sillón Puff Niñopeluche</p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 8-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img src="./images/product-slide1/product8.png" alt="" />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillon Ideal Para Niños Varios Modelos
+                        Hermoso
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 9-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_887602-MLA44973693873_022021-AB.webp"
+                      alt="peluches"
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>6.480</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>Sofá De Peluche Dinosaurio Sillón Puff Niñopeluche</p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- product-item 10-->
+              <div class="slide-product">
+                <div class="slide-product-ui">
+                  <a href="#">
+                    <img
+                      src="https://http2.mlstatic.com/D_Q_NP_880896-MLA44464622677_122020-AB.webp"
+                      alt=""
+                    />
+                    <div class="ui-content">
+                      <div class="price">
+                        <p>
+                          <s>$ 4.499 <span>00</span></s>
+                        </p>
+                        <span>3.498</span><span>5% OFF</span>
+                        <blockquote>Envío gratis</blockquote>
+                      </div>
+                      <p>
+                        Peluche Puff Sillon Ideal Para Niños Varios Modelos
+                        Hermoso
+                      </p>
+                      <button>
+                        <img src="./images/heart.svg" alt="like product" />
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 section descrubri">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Relacionado con tus visitas en Juegos y Juguetes</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+          <div class="flex-wrap d-flex">
+            <div class="mb-2 col-12 col-md-6">
+              <div class="discover d-flex">
+                <div>
+                  <p>Lo mejor para entrenar</p>
+                  <h3>Hasta 18x <br />envíos gratis</h3>
+                  <button>Ver más</button>
+                </div>
+                <div>
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_823681-MLA47326758649_092021-C.webp"
+                    alt="Bicicleta"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ps-0 ps-md-2 col-12 col-md-6">
+              <div class="discover d-flex">
+                <div>
+                  <p>Ecommerce Pago Point + QR</p>
+                  <h3>Aceptá todas <br />las tarjetas</h3>
+                  <button>Ver más</button>
+                </div>
+                <div>
+                  <img
+                    src="https://http2.mlstatic.com/D_NQ_631155-MLA46806898533_072021-C.webp"
+                    alt="Ecommerce pago"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 section">
+        <div class="px-2 container-home">
+          <div class="d-flex">
+            <h3>Categorías populares</h3>
+            <a href="#" class="px-3"> Ver historial</a>
+          </div>
+          <div class="container-boxcategories d-flex">
+            <div id="number2" class="columbox">
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 468 468"
+                  style="enable-background: new 0 0 468 468"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M450.1,187.5l-10.2-10.8l-35.8-96.5C398,63.9,382.4,53.1,365,53H109.3c-17.4,0-33,10.9-39.1,27.2l-35.3,95.3l-14.7,13.6
+			C7.4,200,0,216,0,232.8v140.6c0.1,23,18.8,41.6,41.8,41.6h26.4c23,0,41.7-18.6,41.8-41.6V353h248v20.4c0.1,23,18.8,41.6,41.8,41.6
+			h26.4c23,0,41.7-18.6,41.8-41.6V229.1C467.9,213.4,461.5,198.4,450.1,187.5z M89,87c3.2-8.5,11.3-14,20.3-14h255.8
+			c9,0,17.1,5.6,20.3,14l31.2,84h-23.3c-5.5-37.5-40.4-63.4-77.9-57.8c-29.9,4.4-53.4,27.9-57.8,57.8H57.8L89,87z M372.9,171h-95.1
+			c5.5-26.3,31.3-43.1,57.6-37.6C354.2,137.4,368.9,152.1,372.9,171z M90,373.4c-0.1,12-9.8,21.6-21.8,21.6H41.8
+			c-12,0-21.7-9.6-21.8-21.6v-26.2c6,3.9,13.9,5.8,21.8,5.8H90V373.4z M448,373.4c-0.1,12-9.8,21.6-21.8,21.6h-26.4
+			c-12,0-21.7-9.7-21.8-21.6V353h48.2c7.9,0,15.8-1.9,21.8-5.8V373.4z M426.2,333H41.8c-11.9,0.1-21.7-9.4-21.8-21.4v-78.8
+			c0-11,4.9-21.5,13.3-28.6c0.1-0.1,0.3-0.3,0.4-0.4L47.3,191H426l9.6,10.3c0.1,0.2,0.4,0.3,0.5,0.5c7.5,7.1,11.8,17,11.8,27.3v82.5
+			h0.1C447.9,323.5,438.1,333.1,426.2,333z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M132,231H57c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C142,235.5,137.5,231,132,231z M122,283
+			H67v-32h55V283z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M411,231h-75c-5.5,0-10,4.5-10,10v52c0,5.5,4.5,10,10,10h75c5.5,0,10-4.5,10-10v-52C421,235.5,416.5,231,411,231z
+			 M401,283h-55v-32h55V283z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M282.3,273h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,273,282.3,273z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M282.3,242h-96.6c-5.5,0-10,4.5-10,10s4.5,10,10,10h96.6c5.5,0,10-4.5,10-10S287.8,242,282.3,242z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Autos, Motos y Otros</h3>
+              </div>
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 416.4 416.4"
+                  style="enable-background: new 0 0 416.4 416.4"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M328.14,12.16l-0.44-0.56c-7.411-7.449-17.492-11.626-28-11.6H116.46C94.683,0.066,77.046,17.703,76.98,39.48V376.8
+			c-0.021,10.507,4.155,20.587,11.6,28c7.413,7.445,17.493,11.621,28,11.6h183.24c10.501,0.032,20.58-4.129,28-11.56
+			c7.445-7.413,11.621-17.493,11.6-28V39.52C339.362,29.28,335.316,19.466,328.14,12.16z M324.1,376.8
+			c0.004,6.439-2.558,12.615-7.12,17.16c-4.545,4.562-10.721,7.124-17.16,7.12H116.46c-6.44,0.004-12.615-2.558-17.16-7.12
+			c-4.573-4.541-7.149-10.716-7.16-17.16V39.52c0.044-13.413,10.907-24.276,24.32-24.32h183.36c6.444,0.011,12.619,2.587,17.16,7.16
+			l0.36,0.32c4.367,4.518,6.805,10.557,6.8,16.84L324.1,376.8z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <circle cx="208.14" cy="378.84" r="10.68" />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M305.86,47.64h-0.08c-6.239-6.267-14.716-9.793-23.56-9.8h-148c-8.83,0.017-17.29,3.543-23.52,9.8
+			c-6.267,6.239-9.793,14.717-9.8,23.56v251.36c0.007,8.844,3.533,17.321,9.8,23.56c6.239,6.267,14.717,9.793,23.56,9.8h148
+			c8.629-0.005,16.918-3.361,23.12-9.36l0.48-0.44c6.267-6.239,9.793-14.716,9.8-23.56V71.16
+			C315.643,62.331,312.118,53.87,305.86,47.64z M295.02,335.4l-0.32,0.36c-3.373,3.219-7.858,5.01-12.52,5h-148
+			c-4.818,0.008-9.44-1.907-12.84-5.32c-3.424-3.396-5.353-8.017-5.36-12.84V71.16c-0.008-4.818,1.907-9.44,5.32-12.84
+			c3.4-3.413,8.022-5.328,12.84-5.32h148c4.818-0.008,9.44,1.907,12.84,5.32c3.413,3.4,5.328,8.022,5.32,12.84l0.08,251.4
+			C300.373,327.383,298.444,332.004,295.02,335.4z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Celulares y Teléfonos</h3>
+              </div>
+            </div>
+            <div id="number2" class="columbox">
+              <div class="category">
+                <svg
+                  id="Icons"
+                  height="512"
+                  viewBox="0 0 74 74"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m67 59h-60a5.006 5.006 0 0 1 -5-5v-36h2v36a3 3 0 0 0 3 3h60a3 3 0 0 0 3-3v-44a3 3 0 0 0 -3-3h-60a3 3 0 0 0 -3 3v4h-2v-4a5.006 5.006 0 0 1 5-5h60a5.006 5.006 0 0 1 5 5v44a5.006 5.006 0 0 1 -5 5z"
+                  />
+                  <path
+                    d="m52 69h-30a1 1 0 0 1 -1-1c0-5 5.269-5 7-5h18c1.731 0 7 0 7 5a1 1 0 0 1 -1 1zm-28.879-2h27.758c-.349-1.231-1.556-2-4.879-2h-18c-3.323 0-4.53.769-4.879 2z"
+                  />
+                  <path
+                    d="m45 65h-16a1 1 0 0 1 -1-1v-6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1zm-15-2h14v-4h-14z"
+                  />
+                  <path d="m3 49h68v2h-68z" />
+                  <path d="m33 53h8v2h-8z" />
+                </svg>
+                <h3>Computación</h3>
+              </div>
+              <div class="category">
+                <svg
+                  viewBox="0 0 512 512.001"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m256 360.53125c51.832031 0 94-42.167969 94-94v-172.53125c0-51.832031-42.167969-94-94-94s-94 42.167969-94 94v172.53125c0 51.832031 42.167969 94 94 94zm0-340.53125c40.804688 0 74 33.195312 74 74v82.644531h-148v-82.644531c0-40.804688 33.195312-74 74-74zm-74 176.644531h148v69.886719c0 40.804688-33.195312 74-74 74s-74-33.195312-74-74zm0 0"
+                  />
+                  <path
+                    d="m231.667969 131.3125h48.664062c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10h-48.664062c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10zm0 0"
+                  />
+                  <path
+                    d="m231.667969 94.042969h48.664062c5.523438 0 10-4.476563 10-10 0-5.523438-4.476562-10-10-10h-48.664062c-5.523438 0-10 4.476562-10 10 0 5.523437 4.476562 10 10 10zm0 0"
+                  />
+                  <path
+                    d="m384.03125 256.53125c-5.519531 0-10 4.476562-10 10 0 65.082031-52.949219 118.03125-118.03125 118.03125s-118.03125-52.949219-118.03125-118.03125c0-5.523438-4.476562-10-10-10s-10 4.476562-10 10c0 65.992188 46.558594 121.308594 108.546875 134.851562v50.554688h-.785156c-27.605469 0-50.0625 22.457031-50.0625 50.0625 0 5.523438 4.476562 10 10 10h140.664062c5.523438 0 10-4.476562 10-10 0-27.601562-22.457031-50.0625-50.0625-50.0625h-.785156v-50.554688c61.992187-13.542968 108.546875-68.859374 108.546875-134.851562 0-5.523438-4.476562-10-10-10zm-69.40625 235.46875h-117.246094c4.128906-11.675781 15.277344-20.0625 28.351563-20.0625h60.542969c13.070312 0 24.21875 8.386719 28.351562 20.0625zm-49.140625-40.0625h-18.96875v-47.707031c3.136719.214843 6.296875.332031 9.484375.332031s6.347656-.117188 9.484375-.332031zm0 0"
+                  />
+                  <path
+                    d="m50 93.40625c-5.523438 0-10 4.476562-10 10v97.613281c0 5.519531 4.476562 10 10 10s10-4.480469 10-10v-97.613281c0-5.523438-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m130 186.027344c5.523438 0 10-4.476563 10-10v-47.632813c0-5.523437-4.476562-10-10-10s-10 4.476563-10 10v47.632813c0 5.523437 4.476562 10 10 10zm0 0"
+                  />
+                  <path
+                    d="m10 54c-5.523438 0-10 4.476562-10 10v166.332031c0 5.523438 4.476562 10 10 10s10-4.476562 10-10v-166.332031c0-5.523438-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m90 83.316406c-5.523438 0-10 4.476563-10 10v135.167969c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-135.167969c0-5.523437-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m462 93.40625c-5.523438 0-10 4.476562-10 10v97.613281c0 5.519531 4.476562 10 10 10s10-4.480469 10-10v-97.613281c0-5.523438-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m382 186.027344c5.523438 0 10-4.476563 10-10v-47.632813c0-5.523437-4.476562-10-10-10s-10 4.476563-10 10v47.632813c0 5.523437 4.476562 10 10 10zm0 0"
+                  />
+                  <path
+                    d="m502 54c-5.523438 0-10 4.476562-10 10v166.332031c0 5.523438 4.476562 10 10 10s10-4.476562 10-10v-166.332031c0-5.523438-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m422 218.488281c-2.628906 0-5.210938 1.0625-7.070312 2.921875-1.859376 1.871094-2.929688 4.441406-2.929688 7.078125 0 2.632813 1.070312 5.210938 2.929688 7.070313 1.859374 1.863281 4.441406 2.929687 7.070312 2.929687s5.210938-1.066406 7.070312-2.929687c1.859376-1.859375 2.929688-4.4375 2.929688-7.070313 0-2.636719-1.070312-5.207031-2.929688-7.078125-1.859374-1.859375-4.441406-2.921875-7.070312-2.921875zm0 0"
+                  />
+                  <path
+                    d="m422 83.316406c-5.523438 0-10 4.476563-10 10v92.710938c0 5.523437 4.476562 10 10 10s10-4.476563 10-10v-92.710938c0-5.523437-4.476562-10-10-10zm0 0"
+                  />
+                  <path
+                    d="m256 318.5c28.65625 0 51.972656-23.3125 51.972656-51.96875 0-5.523438-4.480468-10-10-10-5.523437 0-10 4.476562-10 10 0 17.625-14.34375 31.96875-31.972656 31.96875-5.523438 0-10 4.476562-10 10s4.476562 10 10 10zm0 0"
+                  />
+                  <path
+                    d="m297.96875 242c2.632812 0 5.210938-1.070312 7.070312-2.929688 1.859376-1.859374 2.929688-4.441406 2.929688-7.070312s-1.066406-5.210938-2.929688-7.070312c-1.859374-1.859376-4.4375-2.929688-7.070312-2.929688-2.628906 0-5.207031 1.070312-7.066406 2.929688-1.859375 1.859374-2.933594 4.441406-2.933594 7.070312s1.070312 5.210938 2.933594 7.070312c1.859375 1.859376 4.4375 2.929688 7.066406 2.929688zm0 0"
+                  />
+                </svg>
+                <h3>Electrónica, Audio y Video</h3>
+              </div>
+            </div>
+            <div id="number3" class="columbox">
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 480 480"
+                  style="enable-background: new 0 0 480 480"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M472,104H296c-4.418,0-8,3.582-8,8v192h-40v-8h8c4.418,0,8-3.582,8-8s-3.582-8-8-8h-80c-4.418,0-8,3.582-8,8s3.582,8,8,8
+												h8v8h-80v-8h8c4.418,0,8-3.582,8-8s-3.582-8-8-8H32c-4.418,0-8,3.582-8,8s3.582,8,8,8h8v8H8c-4.418,0-8,3.582-8,8v160
+												c0,4.418,3.582,8,8,8h464c4.418,0,8-3.582,8-8V112C480,107.582,476.418,104,472,104z M200,296h32v8h-32V296z M56,296h32v8H56V296
+												z M128,464H16v-96h112V464z M128,352H16v-32h112V352z M288,464H144V320h144V464z M464,464H304V248h160V464z M464,232H304V120h160
+												V232z"
+                        />
+                        <path
+                          d="M168,448h96c4.418,0,8-3.582,8-8v-96c0-4.418-3.582-8-8-8h-96c-4.418,0-8,3.582-8,8v96C160,444.418,163.582,448,168,448z
+												M176,352h80v80h-80V352z"
+                        />
+                        <path
+                          d="M320,224c4.418,0,8-3.582,8-8v-32c0-4.418-3.582-8-8-8s-8,3.582-8,8v32C312,220.418,315.582,224,320,224z"
+                        />
+                        <path
+                          d="M320,304c4.418,0,8-3.582,8-8v-32c0-4.418-3.582-8-8-8s-8,3.582-8,8v32C312,300.418,315.582,304,320,304z"
+                        />
+                        <path
+                          d="M18.86,142.14c1.442,1.204,3.261,1.862,5.14,1.86h240c4.418,0.006,8.005-3.57,8.012-7.988
+												c0.003-1.878-0.656-3.698-1.86-5.14l-80-96c-1.523-1.823-3.777-2.875-6.152-2.872h-8V8c0-4.418-3.582-8-8-8h-48
+												c-4.418,0-8,3.582-8,8v24h-8c-2.375-0.003-4.629,1.049-6.152,2.872l-80,96C15.016,134.263,15.469,139.308,18.86,142.14z M128,16
+												h32v16h-32V16z M107.752,48h72.496l66.672,80H41.08L107.752,48z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Electrodomésticos y Aires Ac.</h3>
+              </div>
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 366.6 366.6"
+                  style="enable-background: new 0 0 366.6 366.6"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M364.5,115.7l-77.6-77.2c-1.2-1.6-3.2-2.4-5.2-2.4h-55.2c-3.6,0-6.8,2.8-7.2,6.8c-1.2,18.8-17.2,33.6-36,33.6
+											s-34.8-14.8-36-33.6c-0.4-3.6-3.2-6.8-7.2-6.8H85.3c-1.6,0-3.6,0.8-5.2,2l-78,77.6c-2.8,2.8-2.8,7.2,0,10l60.4,60.4
+											c2.8,2.8,7.2,2.8,10,0l5.6-5.6v142.8c0,4,3.2,7.2,7.2,7.2h196.4c4,0,7.2-3.2,7.2-7.2V180.9l5.2,5.2c2.8,2.8,7.2,2.8,10,0
+											l60.4-60.4C367.3,122.9,367.3,118.5,364.5,115.7z M298.9,170.9l-12.4-12.4c-2-2-5.2-2.8-8-1.6c-2.8,1.2-4.4,3.6-4.4,6.8v152.8
+											H92.5V163.3c0-2.8-1.6-5.6-4.4-6.8c-2.8-1.2-5.6-0.4-8,1.6l-12.8,12.8l-50-50l70.4-70.4h46c5.2,22.8,25.6,40,49.6,40
+											s44.8-17.2,49.2-40.4h46l70.4,70.4L298.9,170.9z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Ropa y Accesorios</h3>
+              </div>
+            </div>
+            <div id="number4" class="columbox">
+              <div class="category">
+                <svg
+                  height="512pt"
+                  viewBox="0 0 512.00075 512"
+                  width="512pt"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m485.574219 293.613281c13.132812-22.566406 21.878906-47.980469 25.066406-75.074219.011719-.085937.019531-.171874.03125-.257812.867187-7.460938 1.328125-15.046875 1.328125-22.738281 0-50.789063-19.46875-97.113281-51.328125-131.914063-.507813-.710937-1.105469-1.359375-1.785156-1.917968-20.695313-22.011719-46.414063-39.25-75.316407-49.84375-.519531-.234376-1.058593-.429688-1.609374-.570313-20.488282-7.304687-42.535157-11.296875-65.503907-11.296875-25.617187 0-50.097656 4.960938-72.539062 13.957031-.609375.183594-1.195313.425781-1.761719.722657-27.59375 11.375-52.03125 28.890624-71.609375 50.832031-.640625.566406-1.210937 1.203125-1.691406 1.90625-29.847657 34.34375-47.941407 79.160156-47.941407 128.125 0 7.339843.421876 14.585937 1.214844 21.71875.007813.089843.019532.175781.03125.261719 1.453125 12.945312 4.175782 25.507812 8.039063 37.566406l-105.042969 105.042968c-3.90625 3.90625-3.90625 10.238282 0 14.144532 1.953125 1.953125 4.511719 2.929687 7.070312 2.929687 2.558594 0 5.117188-.976562 7.070313-2.929687l98.742187-98.738282c2.75 6.105469 5.804688 12.050782 9.144532 17.804688.304687.6875.691406 1.332031 1.140625 1.929688 24.789062 41.628906 64.585937 73.316406 111.875 87.550781l-70.445313 70.441406c-3.902344 3.90625-3.902344 10.238281 0 14.144531 1.953125 1.953125 4.515625 2.929688 7.074219 2.929688s5.117187-.976563 7.070313-2.929688l79.183593-79.1875c10.851563 1.875 22 2.863282 33.375 2.863282 71.230469 0 133.679688-38.292969 167.867188-95.367188.5-.648438.921875-1.351562 1.25-2.105469zm-86.523438.394531-35.578125-54.75 18.917969-58.222656 44.964844-10.097656 11.699219-2.625 51.121093 52.496094c-3.105469 21.453125-10.105469 41.664062-20.261719 59.890625zm-129.605469-54.75-35.5625 54.722657-71.082031-13.640625c-10.183593-18.378906-17.160156-38.769532-20.183593-60.410156l51.1875-51.632813 56.722656 12.738281 12.605468 38.800782zm-98.542968-141.742187 9.019531 56.378906-38.976563 39.316407c.464844-35.386719 11.4375-68.285157 29.957032-95.695313zm116.792968 133.191406-17.664062-54.363281 46.242188-33.59375 46.242187 33.597656-17.664063 54.359375zm204.285157-36.710937-39.179688-40.234375 6.925781-59.546875c20.039063 28.253906 31.929688 62.660156 32.253907 99.78125zm-49.921875-120.957032-8.851563 76.089844-21.515625 4.828125-34.832031 7.820313-50.21875-36.484375v-54.136719l54.273437-38.898438c23.207032 9.195313 43.992188 23.203126 61.144532 40.78125zm-85-48.289062-41.023438 29.402344-45.734375-27.980469c14.714844-4.015625 30.1875-6.171875 46.15625-6.171875 13.972657 0 27.566407 1.648438 40.601563 4.75zm-111.027344 10.015625 60.242188 36.859375v53.667969l-35.421876 25.734375-14.792968 10.75-56.65625-12.71875-11.640625-72.761719c16.269531-17.546875 36.070312-31.769531 58.269531-41.53125zm-67.765625 268.90625 53.957031 10.359375 27.480469 47.632812c-32.464844-11.121093-60.667969-31.507812-81.4375-57.992187zm108.507813 64.890625-36.449219-63.179688 35.53125-54.675781h61.203125l35.53125 54.675781-36.441406 63.175782c-9.65625 1.652344-19.574219 2.523437-29.691407 2.523437-10.117187.003907-20.03125-.867187-29.683593-2.519531zm86.441406-6.898438 27.464844-47.613281 53.75-10.097656c-20.746094 26.347656-48.863282 46.628906-81.214844 57.710937zm0 0"
+                  />
+                  <path
+                    d="m137.722656 360.132812-134.792968 134.796876c-3.90625 3.90625-3.90625 10.238281 0 14.144531 1.953124 1.949219 4.511718 2.925781 7.070312 2.925781s5.117188-.976562 7.070312-2.929688l134.796876-134.792968c3.902343-3.90625 3.902343-10.238282 0-14.144532-3.90625-3.902343-10.238282-3.902343-14.144532 0zm0 0"
+                  />
+                  <path
+                    d="m166.148438 481.011719c-2.628907 0-5.207032 1.070312-7.066407 2.929687s-2.933593 4.4375-2.933593 7.078125c0 2.628907 1.070312 5.199219 2.933593 7.0625 1.859375 1.871094 4.4375 2.9375 7.066407 2.9375 2.632812 0 5.210937-1.066406 7.070312-2.9375 1.859375-1.859375 2.929688-4.433593 2.929688-7.0625 0-2.640625-1.066407-5.21875-2.929688-7.078125-1.859375-1.859375-4.4375-2.929687-7.070312-2.929687zm0 0"
+                  />
+                </svg>
+                <h3>Deportes y Fitness</h3>
+              </div>
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M486.625,191.23h-10.172v-37.805c0-22.349-18.182-40.531-40.531-40.531H289.031c-13.617,0-25.678,6.757-33.031,17.086
+											c-7.353-10.33-19.414-17.086-33.031-17.086h-92.282c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h92.282
+											c14.078,0,25.531,11.453,25.531,25.531v75.01c-0.157-0.151-0.323-0.292-0.482-0.441c-8.89-8.289-20.939-13.067-33.101-13.067
+											H89.989C89.328,204.857,82.463,196,72.99,192.642c-2.669-0.946-5.491-1.412-8.322-1.412H50.547v-37.805
+											c0-14.078,11.453-25.531,25.531-25.531h24.609c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5H76.078
+											c-22.349,0-40.531,18.182-40.531,40.531v37.805H25.375C11.383,191.23,0,202.615,0,216.605v78.311
+											c0,29.138,23.706,52.844,52.844,52.844h3.769c0,0-8.212,22.088-8.218,22.105c-5.181,13.934,5.483,29.241,20.325,29.241h12.066
+											c6.754,0,13.219-3.216,17.294-8.603l32.331-42.743h251.18l32.331,42.744c4.075,5.386,10.54,8.602,17.293,8.602
+											c0,0,12.058,0,12.065,0c14.86,0,25.505-15.31,20.325-29.241l-8.219-22.105h3.77c29.138,0,52.844-23.706,52.844-52.844v-78.311
+											C512,202.615,500.617,191.23,486.625,191.23z M263.5,153.427c0-14.079,11.453-25.532,25.531-25.532h146.891
+											c14.078,0,25.531,11.453,25.531,25.531v37.805c0,0-14.117,0-14.122,0c-9.972,0-19.538,6.4-23.406,15.582
+											c-1.083,2.571-1.732,5.333-1.914,8.116c0,0-124.924,0-124.928,0c-12.35,0-24.659,4.969-33.583,13.508V153.427z M90.044,229.928
+											h124.873c18.518,0.001,33.583,15.066,33.583,33.584v10.665H90.044V229.928z M86.117,381.454c-1.256,1.661-3.25,2.652-5.332,2.652
+											c0,0-12.024,0-12.066,0c-4.592,0-7.865-4.711-6.265-9.013l10.162-27.333h38.986L86.117,381.454z M443.28,384.105h-12.065
+											c-2.082,0-4.075-0.991-5.331-2.651l-25.486-33.694h38.986c0,0,10.127,27.237,10.162,27.332
+											C451.149,379.404,447.853,384.105,443.28,384.105z M459.156,332.76H52.844C31.977,332.761,15,315.783,15,294.916v-78.311
+											c0-5.721,4.654-10.375,10.375-10.375h39.293c5.721,0,10.375,4.654,10.375,10.375v65.071c0,4.142,3.358,7.5,7.5,7.5H358.02
+											c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5H263.5v-10.665c0-18.518,15.065-33.583,33.583-33.583h124.873v44.249H388.02
+											c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h41.436c4.142,0,7.5-3.358,7.5-7.5v-65.071
+											c0-5.721,4.654-10.375,10.375-10.375h39.293c5.721,0,10.375,4.654,10.375,10.375v78.31H497
+											C497,315.783,480.023,332.76,459.156,332.76z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+
+                <h3>Hogar, Muebles y Jardín</h3>
+              </div>
+            </div>
+            <div id="number5" class="columbox">
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 480 480"
+                  style="enable-background: new 0 0 480 480"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M472,464h-48V200c0-4.418-3.582-8-8-8H304V8c0-4.418-3.582-8-8-8H88c-4.418,0-8,3.582-8,8v456H8c-4.418,0-8,3.582-8,8
+												s3.582,8,8,8h464c4.418,0,8-3.582,8-8S476.418,464,472,464z M168,464h-32v-72c0-4.418,3.582-8,8-8h16c4.418,0,8,3.582,8,8V464z
+												M200,200v264h-16v-72c0-13.255-10.745-24-24-24h-16c-13.255,0-24,10.745-24,24v72H96V16h192v176h-80
+												C203.582,192,200,195.582,200,200z M408,464H216V208h192V464z"
+                        />
+                        <path
+                          d="M256,112h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C264,115.582,260.418,112,256,112z
+												M248,160h-32v-32h32V160z"
+                        />
+                        <path
+                          d="M256,32h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8V40C264,35.582,260.418,32,256,32z
+												M248,80h-32V48h32V80z"
+                        />
+                        <path
+                          d="M176,112h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,115.582,180.418,112,176,112z
+												M168,160h-32v-32h32V160z"
+                        />
+                        <path
+                          d="M176,32h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8V40C184,35.582,180.418,32,176,32z
+												M168,80h-32V48h32V80z"
+                        />
+                        <path
+                          d="M176,192h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,195.582,180.418,192,176,192z
+												M168,240h-32v-32h32V240z"
+                        />
+                        <path
+                          d="M176,272h-48c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h48c4.418,0,8-3.582,8-8v-48C184,275.582,180.418,272,176,272z
+												M168,320h-32v-32h32V320z"
+                        />
+                        <path
+                          d="M328,368h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,364.418,323.582,368,328,368z
+												M336,320h32v32h-32V320z"
+                        />
+                        <path
+                          d="M328,288h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,284.418,323.582,288,328,288z
+												M336,240h32v32h-32V240z"
+                        />
+                        <path
+                          d="M328,448h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C320,444.418,323.582,448,328,448z
+												M336,400h32v32h-32V400z"
+                        />
+                        <path
+                          d="M248,368h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,364.418,243.582,368,248,368z
+												M256,320h32v32h-32V320z"
+                        />
+                        <path
+                          d="M248,288h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,284.418,243.582,288,248,288z
+												M256,240h32v32h-32V240z"
+                        />
+                        <path
+                          d="M248,448h48c4.418,0,8-3.582,8-8v-48c0-4.418-3.582-8-8-8h-48c-4.418,0-8,3.582-8,8v48C240,444.418,243.582,448,248,448z
+												M256,400h32v32h-32V400z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+
+                <h3>Inmuebles</h3>
+              </div>
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 451.043 451.043"
+                  style="enable-background: new 0 0 451.043 451.043"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M384.99,66.054C342.394,23.459,285.761,0,225.521,0C165.283,0,108.649,23.459,66.054,66.054S0,165.283,0,225.522
+										S23.458,342.394,66.054,384.99s99.229,66.054,159.468,66.054c60.239,0,116.873-23.458,159.468-66.054
+										c42.595-42.595,66.054-99.229,66.054-159.468S427.585,108.649,384.99,66.054z M225.521,433.043
+										C111.094,433.043,18,339.949,18,225.522S111.094,18,225.521,18c114.428,0,207.522,93.094,207.522,207.521
+										S339.95,433.043,225.521,433.043z"
+                    />
+                    <path
+                      d="M225.521,38.13c-103.329,0-187.392,84.063-187.392,187.392s84.063,187.393,187.392,187.393s187.393-84.064,187.393-187.393
+										S328.85,38.13,225.521,38.13z M247.834,359.302h-44.641c-16.87-56.333-59.586-101.839-114.825-122.151l15.428-65.49
+										c39.619-9.641,80.54-14.541,121.728-14.541c41.202,0,82.119,4.902,121.724,14.551l15.425,65.474
+										C307.427,257.452,264.705,302.961,247.834,359.302z M56.129,225.522c0-14.331,1.796-28.25,5.163-41.55
+										c7.531-2.541,15.146-4.912,22.784-7.099l-12.931,54.889c-4.915-1.282-9.909-2.375-14.978-3.261
+										C56.15,227.509,56.129,226.518,56.129,225.522z M379.898,231.759l-12.929-54.881c7.645,2.187,15.26,4.558,22.784,7.1
+										c3.365,13.298,5.161,27.215,5.161,41.544c0,0.995-0.021,1.986-0.038,2.977C389.807,229.385,384.813,230.477,379.898,231.759z
+										M225.521,56.13c71.27,0,132.395,44.246,157.365,106.709c-8.598-2.664-17.266-5.112-25.917-7.308
+										c-42.686-10.888-86.91-16.409-131.445-16.409c-44.517,0-88.744,5.518-131.45,16.398c-8.646,2.2-17.313,4.651-25.917,7.317
+										C93.128,100.374,154.252,56.13,225.521,56.13z M57.492,247.061c70.855,14.342,125.07,72.703,134.195,144.456
+										C121.328,377.198,66.678,319.13,57.492,247.061z M210.102,394.205c-0.572-5.71-1.397-11.349-2.472-16.903h35.769
+										c-1.076,5.554-1.9,11.194-2.472,16.905c-5.076,0.46-10.211,0.708-15.405,0.708C220.323,394.914,215.182,394.666,210.102,394.205z
+										M259.341,391.52c9.125-71.766,63.347-130.129,134.211-144.462C384.366,319.134,329.708,377.205,259.341,391.52z"
+                    />
+                    <path
+                      d="M225.521,174.343c-28.22,0-51.179,22.959-51.179,51.179c0,28.221,22.959,51.18,51.179,51.18
+										c28.221,0,51.18-22.959,51.18-51.18C276.701,197.302,253.742,174.343,225.521,174.343z M225.521,258.701
+										c-18.295,0-33.179-14.884-33.179-33.18c0-18.295,14.884-33.179,33.179-33.179c18.295,0,33.18,14.884,33.18,33.179
+										C258.701,243.817,243.817,258.701,225.521,258.701z"
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Accesorios para Vehículos</h3>
+              </div>
+            </div>
+            <div id="number6" class="columbox">
+              <div class="category">
+                <?xml version="1.0"?>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  height="512"
+                >
+                  <g id="outline">
+                    <path
+                      d="M88,375.017V332a12.013,12.013,0,0,0-12-12H64V288h8a8,8,0,0,0,0-16H64v-8H80a8,8,0,0,0,0-16H64v-8H80a8,8,0,0,0,0-16H64v-8h8a8,8,0,0,0,0-16H64v-8a8,8,0,0,0-16,0v8H40a8,8,0,0,0,0,16h8v8H32a8,8,0,0,0,0,16H48v8H32a8,8,0,0,0,0,16H48v8H40a8,8,0,0,0,0,16h8v32H36a12.013,12.013,0,0,0-12,12v43.017L16.239,406.06A7.977,7.977,0,0,0,16,408v68a20.023,20.023,0,0,0,20,20H76a20.023,20.023,0,0,0,20-20V408a7.977,7.977,0,0,0-.239-1.94ZM38.246,384H73.754l4,16H34.246ZM40,336H72v32H40ZM76,480H36a4,4,0,0,1-4-4V416H80v60A4,4,0,0,1,76,480Z"
+                    />
+                    <path
+                      d="M440,16H360a40.045,40.045,0,0,0-40,40v1.837a39.818,39.818,0,0,0,2.861,14.856L352,145.541V200a8.072,8.072,0,0,0,.08,1.131l7.94,55.579,1.181,34.231A112.033,112.033,0,0,0,184,310.26V264a40.045,40.045,0,0,0-40-40H128a8,8,0,0,0-8,8V352a8,8,0,0,0-8,8V480a16.019,16.019,0,0,0,16,16h48a15.972,15.972,0,0,0,12.881-6.549A43.853,43.853,0,0,0,212,496H348a43.717,43.717,0,0,0,20.544-5.107A8,8,0,0,0,376,496h48a8,8,0,0,0,8-7.724L439.98,256.71l7.94-55.579A8.072,8.072,0,0,0,448,200V145.541l29.139-72.848A39.825,39.825,0,0,0,480,57.837V56A40.045,40.045,0,0,0,440,16Zm-8,136v47.432L425.062,248H416V216a8,8,0,0,0-16,0v32H374.938L368,199.432V152ZM214.6,297.718A96,96,0,0,1,357.982,424H337.171A79.984,79.984,0,1,0,222.8,424H192V360a8,8,0,0,0-6.684-7.883A95.653,95.653,0,0,1,214.6,297.718ZM311,424h-3.648l30.076-84.209A63.965,63.965,0,0,1,311,424Zm-20.639,0H267.307l40.164-113.793a64.3,64.3,0,0,1,18.7,13.54Zm-40.022,0H249a64.529,64.529,0,0,1-11-7.663L277.641,304.06c.784-.029,1.568-.06,2.359-.06a63.974,63.974,0,0,1,12.273,1.194Zm-24.381-21.606A64.091,64.091,0,0,1,259.5,307.388ZM310.629,440A24.042,24.042,0,0,1,288,456H272a24.031,24.031,0,0,1-22.488-15.646C249.943,440.27,310.629,440,310.629,440ZM128,368h48v16H128Zm8-104.022A39.788,39.788,0,0,0,160,272h8v48H136ZM166.624,256H160a24.039,24.039,0,0,1-22.624-16H144A24.039,24.039,0,0,1,166.624,256ZM136,336h32v16H136Zm40,144H128V400h48l.007,80Zm36,0a27.882,27.882,0,0,1-20-8.416V440h40.805A40.067,40.067,0,0,0,272,472h16A40.067,40.067,0,0,0,327.2,440H376v12a28.032,28.032,0,0,1-28,28Zm204.271,0h-32.8l-.037-.548a8.118,8.118,0,0,0-.174-1.158A43.764,43.764,0,0,0,392,452V432a8,8,0,0,0-8-8h-6.989A111.951,111.951,0,0,0,378,313.834L376.281,264H423.72ZM464,57.837a23.859,23.859,0,0,1-1.717,8.912h0L434.584,136h-7.978l13.086-45.8a8,8,0,1,0-15.384-4.4L409.965,136H408V88a8,8,0,0,0-16,0v48h-1.965L375.692,85.8a8,8,0,1,0-15.384,4.4L373.394,136h-7.978l-27.7-69.251A23.859,23.859,0,0,1,336,57.837V56a24.027,24.027,0,0,1,24-24h80a24.027,24.027,0,0,1,24,24Z"
+                    />
+                    <path
+                      d="M408,192a8,8,0,0,0,8-8v-8a8,8,0,0,0-16,0v8A8,8,0,0,0,408,192Z"
+                    />
+                  </g>
+                </svg>
+                <h3>Belleza y Cuidado Personal</h3>
+              </div>
+              <div class="category">
+                <svg
+                  height="512"
+                  viewBox="0 0 128 128"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="m102.527 41.553a18.116 18.116 0 0 0 -5.986-6.528v-2.953a3.778 3.778 0 0 0 -3.774-3.772h-10.827a3.778 3.778 0 0 0 -3.774 3.774v3.712c-6.293 2.534-14.054 2.455-14.195 2.455-.091 0-7.833.086-14.137-2.454v-3.715a3.778 3.778 0 0 0 -3.774-3.772h-10.827a3.778 3.778 0 0 0 -3.774 3.774v2.952a18.139 18.139 0 0 0 -5.987 6.529c-5.093 9.113-8.7 42.706-8.7 51.353a6.445 6.445 0 0 0 5.095 6.467 10.694 10.694 0 0 0 2.759.344c6.976 0 16.615-5.882 23.824-18.479a10.633 10.633 0 0 1 9.239-5.283h12.63a10.632 10.632 0 0 1 9.239 5.283c8.219 14.362 19.6 20 26.583 18.135a6.446 6.446 0 0 0 5.095-6.467c-.004-8.649-3.616-42.242-8.709-51.355zm-20.587-9.753h10.827a.274.274 0 0 1 .274.274v1.292a15.939 15.939 0 0 0 -11.375.781v-2.075a.274.274 0 0 1 .274-.272zm-17.969 9.939a49.12 49.12 0 0 0 8.83-.819v6.46h-17.601v-6.458a49.189 49.189 0 0 0 8.771.817zm-29.012-9.667a.274.274 0 0 1 .274-.274h10.827a.274.274 0 0 1 .274.274v2.073a15.939 15.939 0 0 0 -11.375-.781zm70.278 63.918c-4.761 1.264-14.932-3.012-22.646-16.49a14.137 14.137 0 0 0 -12.276-7.045h-12.63a14.142 14.142 0 0 0 -12.277 7.045c-7.708 13.477-17.885 17.762-22.645 16.49a2.972 2.972 0 0 1 -2.5-3.084c0-9.551 3.752-41.579 8.26-49.646 2.593-4.64 6.571-7.1 10.986-7.1a14.115 14.115 0 0 1 6.66 1.792c.4.215.81.415 1.225.606h.005a29.278 29.278 0 0 0 4.3 1.556v9.016a1.749 1.749 0 0 0 1.75 1.75h21.1a1.749 1.749 0 0 0 1.75-1.75v-9.021a29.253 29.253 0 0 0 4.275-1.546c.034-.013.065-.032.1-.048.389-.18.776-.364 1.152-.566 6.862-3.678 13.788-1.591 17.647 5.311 4.507 8.067 8.259 40.1 8.259 49.646a2.972 2.972 0 0 1 -2.495 3.084z"
+                    />
+                    <path
+                      d="m85.187 56.97a4.8 4.8 0 1 0 -4.794-4.8 4.8 4.8 0 0 0 4.794 4.8zm0-6.09a1.3 1.3 0 1 1 -1.294 1.295 1.3 1.3 0 0 1 1.294-1.295z"
+                    />
+                    <path
+                      d="m85.187 62.53a4.8 4.8 0 1 0 4.8 4.8 4.8 4.8 0 0 0 -4.8-4.8zm0 6.09a1.3 1.3 0 1 1 1.3-1.3 1.3 1.3 0 0 1 -1.3 1.3z"
+                    />
+                    <path
+                      d="m82.407 59.75a4.8 4.8 0 1 0 -4.8 4.8 4.8 4.8 0 0 0 4.8-4.8zm-4.8 1.3a1.3 1.3 0 1 1 1.3-1.3 1.3 1.3 0 0 1 -1.295 1.295z"
+                    />
+                    <path
+                      d="m92.763 54.955a4.8 4.8 0 1 0 4.8 4.8 4.8 4.8 0 0 0 -4.8-4.8zm0 6.09a1.3 1.3 0 1 1 1.3-1.3 1.3 1.3 0 0 1 -1.3 1.3z"
+                    />
+                    <path
+                      d="m50.859 54.563h-4.146v-4.146a1.75 1.75 0 0 0 -1.75-1.75h-6.875a1.75 1.75 0 0 0 -1.75 1.75v4.146h-4.146a1.75 1.75 0 0 0 -1.75 1.75v6.875a1.751 1.751 0 0 0 1.75 1.75h4.146v4.145a1.75 1.75 0 0 0 1.75 1.75h6.875a1.75 1.75 0 0 0 1.75-1.75v-4.145h4.146a1.751 1.751 0 0 0 1.75-1.75v-6.875a1.75 1.75 0 0 0 -1.75-1.75zm-1.75 6.875h-4.146a1.75 1.75 0 0 0 -1.75 1.75v4.145h-3.375v-4.145a1.75 1.75 0 0 0 -1.75-1.75h-4.146v-3.375h4.146a1.751 1.751 0 0 0 1.75-1.75v-4.146h3.375v4.146a1.751 1.751 0 0 0 1.75 1.75h4.146z"
+                    />
+                  </g>
+                </svg>
+                <h3>Consolas y Videojuegos</h3>
+              </div>
+            </div>
+            <div id="number7" class="columbox">
+              <div class="category">
+                <svg
+                  id="Capa_1"
+                  enable-background="new 0 0 512 512"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <g>
+                          <path
+                            d="m512 132.218c0-50.027-40.7-90.727-90.727-90.727-30.5 0-56.783 13.698-73.123 37.834-14.329-7.076-29.316-12.53-44.704-16.191-5.371-1.277-10.765 2.041-12.043 7.414s2.041 10.765 7.414 12.043c92.023 21.891 161.419 112.41 161.419 210.553 0 142.03-142.828 157.363-204.236 157.363s-204.236-15.332-204.236-157.362c0-97.973 69.259-188.459 161.101-210.477 5.371-1.288 8.681-6.686 7.393-12.056-1.288-5.371-6.69-8.676-12.056-7.393-15.264 3.659-30.133 9.084-44.353 16.107-16.341-24.136-42.624-37.834-73.123-37.834-50.026 0-90.726 40.699-90.726 90.726 0 34.447 17.371 63.307 46.841 78.515-9.879 26.476-15.077 54.447-15.077 82.412 0 30.155 6.032 57.258 17.93 80.557 11.251 22.033 27.768 40.754 49.094 55.643 38.571 26.93 92.935 41.164 157.213 41.164s118.642-14.234 157.213-41.164c21.325-14.889 37.843-33.61 49.094-55.643 11.897-23.299 17.93-50.402 17.93-80.557 0-27.968-5.198-55.938-15.076-82.412 29.467-15.209 46.838-44.068 46.838-78.515zm-429.97 14.944c-1.776 2.319-3.509 4.666-5.197 7.041-8.417-4.018-12.833-11.539-12.833-21.985 0-14.737 11.989-26.727 26.727-26.727 9.284 0 15.976 3.284 20.337 10.012-10.476 9.55-20.209 20.139-29.034 31.659zm-62.03-14.944c0-38.999 31.728-70.727 70.727-70.727 23.358 0 42.818 9.719 55.524 27.542-6.791 4.155-13.395 8.689-19.781 13.581-8.092-11.116-20.481-17.124-35.743-17.124-25.765.001-46.727 20.963-46.727 46.728 0 17.25 8.011 31.181 21.868 38.82-4.098 6.892-7.847 13.962-11.237 21.178-21.82-11.938-34.631-33.883-34.631-59.998zm380.936-16.716c4.362-6.727 11.054-10.011 20.337-10.011 14.737 0 26.727 11.99 26.727 26.727 0 10.446-4.416 17.967-12.833 21.984-1.723-2.423-3.491-4.818-5.306-7.183-8.796-11.465-18.493-22.006-28.925-31.517zm56.434 76.714c-3.39-7.216-7.139-14.286-11.238-21.177 13.858-7.64 21.868-21.571 21.868-38.821 0-25.765-20.962-46.727-46.727-46.727-15.261 0-27.651 6.007-35.743 17.123-6.386-4.893-12.99-9.426-19.781-13.581 12.706-17.822 32.165-27.542 55.524-27.542 38.999 0 70.727 31.728 70.727 70.727 0 26.115-12.81 48.059-34.63 59.998z"
+                          />
+                          <path
+                            d="m255.456 246.699c-.047 0-.094.001-.141.001-.029 0-.059 0-.088.001-62.294.423-112.82 43.93-112.82 97.349 0 51.161 46.771 86.892 113.736 86.892s113.737-35.732 113.737-86.893c0-53.68-51.022-97.352-113.736-97.352-.022 0-.044 0-.066 0-.028 0-.056 0-.084 0-.18 0-.359.001-.538.002zm36.187 39.048c0 9.01-14.641 19.049-35.649 19.049s-35.648-10.039-35.648-19.049c0-8.938 14.407-18.888 35.145-19.047h.023.124c.139-.001.279-.001.419-.001 20.974.018 35.586 10.046 35.586 19.048zm58.237 58.302c0 24.787-14.212 39.977-26.134 48.355-17.009 11.954-41.018 18.537-67.603 18.537s-50.594-6.583-67.603-18.537c-11.922-8.378-26.134-23.568-26.134-48.355 0-25.517 15.051-48.188 38.211-62.285-.181 1.308-.273 2.636-.273 3.982 0 19.495 19.376 35.229 45.648 38.446v11.828c0 4.539-3.69 8.232-8.228 8.232-4.537 0-8.229-3.693-8.229-8.232 0-5.523-4.477-10-10-10-5.522 0-10 4.477-10 10 0 15.567 12.663 28.232 28.229 28.232 6.942 0 13.306-2.519 18.228-6.692 4.921 4.172 11.286 6.692 18.228 6.692 15.564 0 28.227-12.665 28.227-28.232 0-5.523-4.477-10-10-10-5.522 0-10 4.477-10 10 0 4.539-3.69 8.232-8.227 8.232s-8.229-3.693-8.229-8.232v-11.828c26.273-3.217 45.649-18.951 45.649-38.446 0-1.415-.102-2.81-.302-4.181 23.349 14.083 38.542 36.847 38.542 62.484z"
+                          />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <path
+                                d="m256 77.56c-4.189 0-7.987-2.698-9.407-6.63-1.395-3.863-.199-8.338 2.938-10.992 3.282-2.776 8.094-3.123 11.746-.864 3.493 2.161 5.343 6.416 4.533 10.446-.928 4.616-5.107 8.04-9.81 8.04z"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <g>
+                            <g>
+                              <g>
+                                <path
+                                  d="m324.904 213.57c11.664-11.664 30.643-11.662 42.309.003 3.905 3.905 3.905 10.237 0 14.142s-10.237 3.905-14.142 0c-3.867-3.867-10.159-3.869-14.024-.003-3.905 3.905-10.237 3.905-14.142 0-3.906-3.905-3.906-10.236-.001-14.142z"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <g>
+                              <g>
+                                <path
+                                  d="m187.318 213.57c3.905 3.905 3.905 10.237 0 14.142s-10.237 3.905-14.142 0c-3.866-3.866-10.157-3.864-14.024.003-3.905 3.905-10.237 3.905-14.142 0s-3.905-10.237 0-14.142c11.665-11.665 30.645-11.666 42.308-.003z"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <h3>Juegos y Juguetes</h3>
+              </div>
+              <div class="category">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 480 480"
+                  style="enable-background: new 0 0 480 480"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M339.904,161.776l-5.136-16.904c-6.524-19.202-27.379-29.479-46.581-22.955c-10.802,3.67-19.285,12.153-22.955,22.955
+											l-5.136,16.904c-4.322,14.256-5.229,29.329-2.648,44c2.354,12.352,10.196,22.964,21.312,28.84L273.008,363.2
+											c-0.77,7.177,1.558,14.342,6.4,19.696c10.413,11.39,28.089,12.182,39.479,1.769c0.616-0.563,1.206-1.153,1.769-1.769
+											c4.734-5.202,7.058-12.157,6.4-19.16L321.272,234.6c11.101-5.879,18.93-16.484,21.28-28.824
+											C345.133,191.105,344.226,176.032,339.904,161.776z M326.792,202.992c-1.732,8.874-8.056,16.155-16.6,19.112
+											c-3.243,1.219-5.332,4.387-5.176,7.848L311.096,365c0.28,2.649-0.594,5.29-2.4,7.248c-4.817,4.769-12.575,4.769-17.392,0
+											c-1.896-2.116-2.757-4.964-2.352-7.776l6.032-134.52c0.156-3.461-1.933-6.629-5.176-7.848c-8.544-2.957-14.868-10.238-16.6-19.112
+											c-2.14-12.18-1.386-24.693,2.2-36.528l5.136-16.912c3.974-10.745,15.906-16.234,26.652-12.26c5.681,2.101,10.159,6.58,12.26,12.26
+											l5.136,16.912C328.174,178.3,328.928,190.812,326.792,202.992z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M216,120c-4.418,0-8,3.582-8,8v68.688l-21.656,21.656c-1.602,1.596-2.454,3.797-2.344,6.056l7,140
+											c0.167,3.019-0.929,5.972-3.024,8.152c-4.379,4.418-11.511,4.45-15.93,0.07c-0.024-0.023-0.047-0.047-0.07-0.07
+											c-2.096-2.18-3.191-5.133-3.024-8.152l7.048-140c0.112-2.258-0.737-4.458-2.336-6.056L152,196.688V128c0-4.418-3.582-8-8-8
+											s-8,3.582-8,8v72c0,2.122,0.844,4.156,2.344,5.656l21.488,21.496l-6.824,136.472c-0.726,14.907,10.77,27.581,25.677,28.307
+											c14.907,0.726,27.581-10.77,28.307-25.677c0.043-0.876,0.043-1.753,0-2.629l-6.824-136.472l21.488-21.496
+											c1.5-1.5,2.344-3.534,2.344-5.656v-72C224,123.582,220.418,120,216,120z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M168,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C176,123.582,172.418,120,168,120z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M192,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C200,123.582,196.418,120,192,120z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M240,0C107.452,0,0,107.452,0,240s107.452,240,240,240s240-107.452,240-240C479.85,107.514,372.486,0.15,240,0z M240,464
+											C116.288,464,16,363.712,16,240S116.288,16,240,16s224,100.288,224,224C463.859,363.653,363.653,463.859,240,464z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M265.969,390.172c-0.429-4.397-4.342-7.614-8.74-7.185c-0.103,0.01-0.206,0.022-0.309,0.036l0.032-0.008
+											c-11.263,1.308-22.641,1.308-33.904,0c-4.39-0.515-8.365,2.626-8.88,7.016c-0.515,4.39,2.626,8.365,7.016,8.88
+											c12.491,1.459,25.109,1.459,37.6,0C263.181,398.483,266.398,394.57,265.969,390.172z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M362.4,136.912c-2.839-3.385-7.885-3.828-11.27-0.988c-0.011,0.009-0.022,0.019-0.034,0.028
+											c-3.377,2.848-3.807,7.894-0.96,11.272c48.235,57.26,44.545,141.929-8.488,194.776c-3.13,3.119-3.139,8.186-0.02,11.316
+											c3.119,3.13,8.186,3.139,11.316,0.02C411.881,294.623,415.991,200.541,362.4,136.912z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          d="M186.392,105.744c-0.005,0-0.01-0.001-0.015-0.001c-0.008,0-0.016,0.001-0.025,0.001H186.392z"
+                        />
+                        <path
+                          d="M277.736,84.472c-31.265-7.493-64.055-5.479-94.168,5.784c-4.136,1.555-6.227,6.169-4.672,10.304
+												c1.172,3.117,4.152,5.18,7.481,5.183c0.957-0.005,1.905-0.18,2.799-0.519c27.118-10.141,56.646-11.952,84.8-5.2
+												c4.295,1.038,8.618-1.601,9.656-5.896C284.67,89.833,282.031,85.51,277.736,84.472z"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M137.992,341.6C111.023,314.677,95.908,278.108,96,240c-0.079-30.446,9.565-60.122,27.528-84.704
+											c2.655-3.532,1.944-8.547-1.588-11.202s-8.547-1.944-11.202,1.588c-0.047,0.063-0.093,0.126-0.138,0.19
+											c-46.253,63.588-39.447,151.359,16.056,207.056c3.128,3.13,8.202,3.132,11.332,0.004C141.118,349.804,141.12,344.73,137.992,341.6
+											z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <h3>Alimentos y Bebidas</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 section">
+        <div class="px-2 container-home">
+          <div class="mb-3 d-flex">
+            <h3>Tu historial</h3>
+            <a href="#" class="px-3"> Ver historial completo</a>
+          </div>
+          <div class="flex-wrap d-flex" style="height: auto">
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_781752-MLA44456025314_122020-AD.webp"
+                  alt="peluche historial"
+                />
+                <p>Puff Sofa De Peluche Sillón Niño Panda</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_887602-MLA44973693873_022021-AD.webp"
+                  alt="peluche historial2"
+                />
+                <p>Almohada Blanda Tierna De Peluche Smoochy</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_649005-MLA42714206772_072020-AD.webp"
+                  alt="Computación 1"
+                />
+                <p>Notebook HP 15-DY1024WM plata 15.6",</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_762573-MLA46125157092_052021-AB.webp"
+                  alt="Motorola "
+                />
+                <p>Celular Liberado Motorola Moto E7i Power 32gb</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_765874-MLA47146197629_082021-AB.webp"
+                  alt="Tablet"
+                />
+                <p>Tablet Samsung Galaxy Tab A7 Lite Sm-t220 8.7 32gb</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_675033-MLA47181570127_082021-AB.webp"
+                  alt="Macbook"
+                />
+                <p>
+                  Notebook Intel Celeron 4gb Ram 128gb Ssd Windows 10 Cta 24
+                </p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+            <div class="box-history">
+              <div class="history">
+                <img
+                  src="https://http2.mlstatic.com/D_Q_NP_802950-MLA43196126428_082020-AB.webp"
+                  alt="Smart Tv"
+                />
+                <p>Smart Tv Tedge Ntv32hd Led Hd 32 220v</p>
+                <button class="delete">x</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modalhome">
+        <div class="container-modal">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h2>Elegí dónde recibir tus compras</h2>
+              <p>
+                Podrás ver costos y tiempos de entrega precisos en todo lo que
+                busques.
+              </p>
+            </div>
+            <button id="close">X</button>
+          </div>
+          <div class="boxpostal py-2">
+            <div class="input-wrapper me-3">
+              <input id="codepostal" class="inputmodal" type="text" required />
+              <label class="codeinsert" for="codepostal"
+                >Ingresar un código postal</label
+              >
+            </div>
+            <button class="btn w-btn blue me-3" type="button">Usar</button>
+            <button class="btn light-btn me-2" type="button">
+              No sé mi código
+            </button>
+
+            <button style="display: none">Usar</button>
+            <a role="button" href=""></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <section class="shopping-info">
+        <div class="px-2 container-home">
+          <div class="flex-wrap d-flex">
+            <div class="col-12 col-md-4 infobox">
+              <img
+                src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/payment.svg"
+                alt="payment"
+              />
+              <h2>Elegí cómo pagar</h2>
+              <p>
+                Podés pagar con tarjeta, débito, efectivo o hasta 12 cuotas sin
+                tarjeta con Ecommerce Crédito.
+              </p>
+              <a href="#">Cómo pagar tus compras</a>
+            </div>
+            <div class="col-12 col-md-4 infobox">
+              <img
+                src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/shipping.svg"
+                alt="shipping"
+              />
+              <h2>Envío gratis desde $ 3.500</h2>
+              <p>
+                Solo por estar registrado en Ecommerce Libre tenés envíos gratis
+                en miles de productos. Es un beneficio de Ecommerce Puntos.
+              </p>
+              <a href="#">Conocé más sobre este beneficio</a>
+            </div>
+            <div class="col-12 col-md-4 infobox">
+              <img
+                src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/ecosystem/protected.svg"
+                alt="protected"
+              />
+              <h2>Seguridad, de principio a fin</h2>
+              <p>
+                ¿No te gusta? ¡Devolvelo! En Ecommerce Libre, no hay nada que no
+                puedas hacer, porque estás siempre protegido.
+              </p>
+              <a href="#">Cómo te protegemos</a>
+            </div>
+          </div>
+          <div class="py-5 d-flex">
+            <div class="buttoninfo">
+              <p>Botón de arrepentimiento</p>
+              <a href="">Cancelar una compra</a>
+              <a href="">Cancelar una suscripción</a>
+            </div>
+            <div class="buttoninfo">
+              <p>Conocé las normas que aplican cuando comprás</p>
+              <a href="#"
+                >Ver contratos de adhesión - Ley N.º 24.240 de Defensa del
+                Consumidor</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-info">
+        <div class="container-more-info">
+          <div class="copyrightbase">
+            <img
+              class="copyright-img"
+              src="https://http2.mlstatic.com/resources/sell/banner_usuarios_financieros.svg"
+              alt="usuarios"
+            />
+          </div>
+          <p class="more-info">
+            Más información
+            <i class="arrow"
+              ><img src="./images/arrow-down.svg" alt="arrow-down"
+            /></i>
+          </p>
+        </div>
+
+        <div class="items-info">
+          <div class="p-list items">
+            <ul class="info-items">
+              <li class="info-item title"><h4>Acerca de</h4></li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+            <ul class="info-items">
+              <li class="info-item titleh4"><h4>Otros sitios</h4></li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+            <ul class="info-items">
+              <li class="info-item titleh4"><h4>Ayuda</h4></li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+            <ul class="info-items">
+              <li class="info-item title"><h4>Redes sociales</h4></li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+            <ul class="info-items">
+              <li class="info-item titleh4">
+                <h4>Mi cuenta</h4>
+              </li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+            <ul class="info-items">
+              <li class="info-item">
+                <h4 class="titleh4">Ecommerce Puntos</h4>
+              </li>
+              <li class="info-item"><a href="!#">Ecommerce Libre</a></li>
+              <li class="info-item"><a href="!#">Investor relations</a></li>
+              <li class="info-item"><a href="!#">Tendencias</a></li>
+              <li class="info-item"><a href="!#">Sustentabilidad</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer-copy">
+        <div class="px-2 container-home">
+          <ul class="copy-items">
+            <li class="copy-item"><a href="!#">Trabajá con nosotros</a></li>
+            <li class="copy-item"><a href="!#">Términos y condiciones</a></li>
+            <li class="copy-item">
+              <a href="!#">Cómo cuidamos tu privacidad</a>
+            </li>
+            <li class="copy-item">
+              <a href="!#">Información al usuario financiero</a>
+            </li>
+            <li class="copy-item"><a href="!#">Ayuda</a></li>
+            <li class="copy-item"><a href="!#">Defensa del Consumidor</a></li>
+          </ul>
+          <div class="copyright-content d-flex justify-content-center">
+            <div class="group">
+              <p class="copyright">Copyright © 1999-2021 Ecommerce Star.</p>
+              <p class="copyright">Av. El parque ##99999</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
